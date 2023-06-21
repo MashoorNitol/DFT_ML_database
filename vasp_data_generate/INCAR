@@ -1,0 +1,37 @@
+System = Fe bcc fero
+# Parameters
+    PREC = Accurate
+    LASPH = True
+    LORBIT = 10
+
+#Electronic relaxation
+    ALGO = Normal
+
+#Electronic Relaxation 
+   ENCUT  =    520.00
+   NELM   =    100    #max SCF steps
+   NELMIN =      4    #min SCF steps
+   EDIFF  =   1E-7    #stopping-criterion for ELM
+   LREAL = F    # RM and RH
+
+
+#DOS related values:
+    ISMEAR = 0
+    SIGMA = 0.2
+
+#Write flags
+    LWAVE  =      F    #write WAVECAR
+    LCHARG =      F    #write CHGCAR
+    LELF   =      F    #write electronic localiz. function (ELF)
+
+# Magnetic moment
+    ISPIN = 2
+    MAGMOM = 54*2.6
+
+
+#Ionic relaxation
+#   NSW    =     100    #number of steps for IOM
+    ISIF   =      3
+    IBRION =      -1   # no update
+#   POTIM  =    0.1    #time-step for ionic-motion
+#   ISYM   =      2    #0-off
