@@ -60,8 +60,8 @@ def generate_POSCARs(filename, lmax, amax, tempstart, tempincr, filestart, filee
             if os.path.exists(dirname):
                 shutil.rmtree(dirname)
             os.mkdir(dirname)
-            shutil.copy("inputs/INCAR", dirname)
-            shutil.copy("inputs/KPOINTS", dirname)
+            shutil.copy("INCAR", dirname)
+            shutil.copy("KPOINTS", dirname)
             # Generate new lattice parameters
             delta_a = np.random.uniform(-lmax, lmax)
             delta_b = np.random.uniform(-lmax, lmax)
