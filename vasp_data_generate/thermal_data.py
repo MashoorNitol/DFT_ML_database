@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
 
 if __name__ == "__main__":
-    input_file_path = "initial_poscar"  # Replace with the path to your input POSCAR file
+    input_file_path = "replicated_POSCAR"  # Replace with the path to your input POSCAR file
     coordchange_values = np.linspace(0.0001, 0.05, 1000)
     lmax = 0.3
     amax = 0.1
